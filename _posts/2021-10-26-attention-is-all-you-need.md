@@ -10,7 +10,7 @@ Máy tính không thể học được từ các dữ liệu thô như bức ả
 * **Encoder**: Là phrase chuyển input thành những features learning có khả năng học tập các task. Đối với model Neural Network, Encoder là các hidden layer. Đối với model CNN, Encoder là chuỗi các layers Convolutional + Maxpooling. Model RNN quá trình Encoder chính là các layers Embedding và Recurrent Neral Network.
 * **Decoder**: Đầu ra của encoder chính là đầu vào của các Decoder. Phrase này nhằm mục đích tìm ra phân phối xác xuất từ các features learning ở Encoder từ đó xác định đâu là nhãn của đầu ra. Kết quả có thể là một nhãn đối với các model phân loại hoặc một chuỗi các nhãn theo tứ tự thời gian đối với model seq2seq.
 
-RNN là model thuộc lớp seq2seq. Về định nghĩa của model chúng ta có thể xem lại bài tổng hợp sau: [RNN](https://phamdinhkhanh.github.io/2019/04/22/L%C3%BD_thuy%E1%BA%BFt_v%E1%BB%81_m%E1%BA%A1ng_LSTM.html)
+RNN là model thuộc lớp seq2seq. Về định nghĩa của model chúng ta có thể xem lại bài tổng hợp sau: [RNN](https://nvip12041994.github.io/25-10-2021-LSTM/)
 Các kĩ thuật RNN đã trải qua rất nhiều những tiến bộ với nhiều kiến trúc được giới thiệu như LSTM, GRU để khắc phục hạn chế về khả năng học phụ thuộc dài hạn. Tuy nhiên trong nhiều bài toán về dịch thuật, việc cải thiện cũng không đáng kể. Chính vì thế kĩ thuật attention được áp dụng để mang lại hiệu quả cao hơn. 
 
 Mô hình seq2seq là mô hình chuỗi nên có thứ tự về thời gian. Trong một tác vụ dịch máy, các từ ở input sẽ có mối liên hệ lớn hơn đối với từ ở output cùng vị trí. Do đó attention hiểu một cách đơn giản sẽ giúp thuật toán điều chỉnh sự tập trung lớn hơn ở các cặp từ (input, output) nếu chúng có vị trí tương đương hoặc gần tương đương.
