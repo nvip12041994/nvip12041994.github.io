@@ -41,10 +41,13 @@ $$K = \begin{bmatrix}-2&-1&2\\-2&4&3\end{bmatrix}$$
 Ma trận K có kích thước m x N (2x3) với m là số chiều của mẫu dữ liệu, N là số mẫu dữ liệu.
 
 `II. Tính mẫu trung bình`
+
 Do mỗi điểm của chúng ta nằm trên không gian 2 chiều (m=2), do đó khi ta tìm trọng tâm M (giá trị trung bình của N mẫu trên không gian m chiều, tạm gọi nó là mẫu trung bình) thì trọng tâm này cũng là 2 chiều.
 
 Mx = ((-2) + (-1) + 2) / 3 = -1/3 = -0.33 (đã làm tròn)
+
 My = ((-2) + 4 + 3) / 3 = 5/3 = 1.67 (đã làm tròn)
+
 M = (Mx, My) = (-0.33, 1.67)
 
 Nói cách khác, để tính M, ta tính trung bình trên từng dòng của ma trận K. Kết quả biểu diễn dưới dạng ma trận:
@@ -84,7 +87,7 @@ $$C = \frac{1}{2} \begin{bmatrix} 8.67 & 7.67 \\ 7.67 & 20.67 \end{bmatrix} = \b
 `V. Nhận xét ma trận hiệp phương sai (covariance matrix)`
 
 - $$c_{11}$$ và $$c_{22}$$ lần lượt là phương sai (variance) của trục X và trục Y. Nói cách khác, các phần tử trên đường chéo chính của ma trận hiệp phương sai là các phương sai của các mẫu dữ liệu.
-- Ma trận hiệp phương sai có tính chất đối xứng qua đường chéo chính. Lý do: bạn sẽ để ý rằng  $$c_{11}$$ và $$c_{22}$$  được tính bởi tích vô hướng của 2 vector $$r_1*r_2$$  và $$r_1*r_2$$ đều cho ra kết quả tính toán như nhau.
+- Ma trận hiệp phương sai có tính chất đối xứng qua đường chéo chính. Lý do: bạn sẽ để ý rằng  $$c_{11}$$ và $$c_{22}$$  được tính bởi tích vô hướng của 2 vector $$r_1*r_2$$  và $$r_2*r_1$$ đều cho ra kết quả tính toán như nhau.
 
 # 3. Ý nghĩa ma trận hiệp phương sai
 
