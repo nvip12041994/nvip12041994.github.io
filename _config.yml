@@ -18,8 +18,9 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Blog: "blog"
+    - Learn deep learning: "https://d2l.aivivn.com/"
   Resume: "resume"
+  Learn: "categories"
   Author's home: "https://www.facebook.com/NVIP12041994"
 
 # --- Logo --- #
@@ -256,3 +257,5 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+# Optional features
+show_categories     : true

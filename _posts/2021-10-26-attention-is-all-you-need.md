@@ -2,6 +2,7 @@
 layout: post
 author: nvip
 title: Bài 2 -  Attention is all you need
+categories: Deep-learning
 ---
 
 # 1. Quá trình encoder và decoder
